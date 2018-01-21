@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+    <!-- BeanPostProcessor 를 함께 등록해 주므로 @Autowired 사용가능 -->
+    <tx:annotation-driven/>
+    
+    <!-- @Configurable이 붙어있는 bean을 찾아서 스프링이 관리하도록 설정 -->
+    <context:spring-configured />
+
+    <!--DB 접속정보-->
+    <context:property-placeholder location="classpath:properties/jdbc.properties" />
+</beans>
