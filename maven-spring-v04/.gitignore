@@ -1,4 +1,5 @@
-# *.properties
+*.properties
 *.class
 *.log
 *.bak
+/target/
