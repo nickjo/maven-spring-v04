@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration PUBLIC "-//APACHE//DTD LOG4J 1.2//EN" "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+	<!-- Appenders -->
+
+	<!--
+		① Logger(Category) : 로깅 메세지를 Appender에 전달합니다. 
+		② Appender : 전달된 로깅 메세지를 파일에다 기록할 것인지, 콘솔에 출력할 것인지 아니면 DB에 저장할 것인지 매개체 역활을 합니다. 
+		③ Layout : Appender가 어디에 출력할 것인지 결정했다면 어떤 형식으로 출력할 것이지 출력 layout을 결졍합니다. 
+	-->
+	<appender name="console" class="org.apache.log4j.ConsoleAppender">
+		<param name="Target" value="System.out" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%-5p: %c - %m%n" />
+		</layout>
+	</appender>
+	<!--// Appenders -->
+	
+	<!-- 	
+		① FATAL : 가장 크리티컬한 에러가 일어 났을 때 사용합니다.
+		② ERROR : 일반 에러가 일어 났을 때 사용합니다.
+		③ WARN : 에러는 아니지만 주의할 필요가 있을 때 사용합니다.
+		④ INFO : 일반 정보를 나타낼 때 사용합니다.
+		⑤ DEBUG : 일반 정보를 상세히 나타낼 때 사용합니다.
+	 -->
+	<!-- Application Loggers -->
+	<logger name="org.art.inside">
+		<level value="info" />
+	</logger>
+	<logger name="org.art.inside.controller">
+		<level value="info" />
+	</logger>
+	<!--// Application Loggers -->
+
+	<!-- 3rdparty Loggers -->
+	<logger name="org.springframework.core">
+		<level value="info" />
+	</logger>
+	
+	<logger name="org.springframework.beans">
+		<level value="info" />
+	</logger>
+	
+	<logger name="org.springframework.context">
+		<level value="info" />
+	</logger>
+
+	<logger name="org.springframework.web">
+		<level value="info" />
+	</logger>
+	<!--// 3rdparty Loggers -->
+
+	<!-- Root Logger -->
+	<root>
+		<priority value="debug" />
+		<appender-ref ref="console" />
+	</root>
+	<!--// Root Logger -->
+</log4j:configuration>

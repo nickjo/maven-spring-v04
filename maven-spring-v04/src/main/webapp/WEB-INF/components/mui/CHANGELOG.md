@@ -1,5 +1,22 @@
 # MUI Changelog
 
+## 0.9.36 - February 2, 2018
+
+* Added support for `disabled` attribute to React Select component
+
+## 0.9.35 - December 17, 2017
+
+* Added close-on-escape support to Dropdown components in MUI CSS/JS, React and
+  Angular libraries.
+
+## 0.9.34 - December 16, 2017
+
+* Added `input` event trigger to CSS/JS Select component
+
+## 0.9.33 - December 15, 2017
+
+* Set bubbles=true for `change` event on CSS/JS Select component
+
 ## 0.9.32 - December 14, 2017
 
 * Fixed typo in `tabIndex` attribute used in MUI React Input, Textarea and

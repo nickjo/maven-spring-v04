@@ -13,12 +13,18 @@
     <!--Main Page-->
     <definition name="/tiles/mainTiles" extends="base-definition">
         <put-attribute name="title" value="Main Page"/>
-        <put-attribute name="body" value="/WEB-INF/views/main/defaultBody.jsp"/>
+        <put-attribute name="body"  value="/WEB-INF/views/main/defaultBody.jsp"/>
     </definition>
 
     <!--Join Page-->
-    <definition name="/tiles/joinTiles" extends="base-definition">
+    <definition name="/tiles/join" extends="base-definition">
         <put-attribute name="title" value="Join Page"/>
-        <put-attribute name="body" value="/WEB-INF/views/join/joinPage.jsp"/>
+        <put-attribute name="body"  value="/WEB-INF/views/login/joinPage.jsp"/>
+    </definition>
+    
+    <!--Login Page-->
+    <definition name="/tiles/login" extends="base-definition">
+        <put-attribute name="title" value="Login Page"/>
+        <put-attribute name="body"  value="/WEB-INF/views/login/loginPage.jsp"/>
     </definition>
 </tiles-definitions>

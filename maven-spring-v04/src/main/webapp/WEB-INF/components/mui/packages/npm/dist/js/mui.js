@@ -986,6 +986,13 @@ function toggleDropdown(toggleEl) {
       
     // remove event handlers
     jqLite.off(doc, 'click', closeDropdownFn);
+    jqLite.off(doc, 'keydown', handleKeyDownFn);
+  }
+
+  // close dropdown on escape key press
+  function handleKeyDownFn(ev) {
+    var key = ev.key;
+    if (key === 'Escape' || key === 'Esc') closeDropdownFn();
   }
 
   // method to open dropdown
@@ -1000,8 +1007,11 @@ function toggleDropdown(toggleEl) {
     // add open class to wrapper
     jqLite.addClass(menuEl, openClass);
 
-    // close dropdown when user clicks outside of menu
-    setTimeout(function() {jqLite.on(doc, 'click', closeDropdownFn);}, 0);
+    setTimeout(function() {
+      // close dropdown when user clicks outside of menu or hits escape key
+      jqLite.on(doc, 'click', closeDropdownFn);
+      jqLite.on(doc, 'keydown', handleKeyDownFn);
+    }, 0);
   }
 
   // toggle dropdown
@@ -1767,8 +1777,9 @@ Menu.prototype.selectCurrent = function() {
   if (this.currentPos !== this.origPos) {
     this.selectEl.selectedIndex = this.itemArray[this.currentPos]._muiIndex;
 
-    // trigger change event
-    util.dispatchEvent(this.selectEl, 'change', false, false);
+    // trigger change and input events
+    util.dispatchEvent(this.selectEl, 'change', true, false);
+    util.dispatchEvent(this.selectEl, 'input', true, false);
   }
 }
 

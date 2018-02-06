@@ -1,6 +1,6 @@
 {
   "name": "mui",
-  "version": "0.9.32",
+  "version": "0.9.36",
   "license": "MIT",
   "authors": [
     "Andres Morey <andres@muicss.com>"
@@ -32,14 +32,13 @@
     "package.json",
     "test"
   ],
-  "_release": "0.9.32",
+  "_release": "0.9.36",
   "_resolution": {
     "type": "version",
-    "tag": "0.9.32",
-    "commit": "6a49e68967f6920236cdde4706a77d362a42a3cc"
+    "tag": "0.9.36",
+    "commit": "b56d7f9640c29e182b6084bcb74c772fc6536437"
   },
   "_source": "https://github.com/muicss/mui.git",
   "_target": "^0.9.32",
-  "_originalSource": "mui",
-  "_direct": true
+  "_originalSource": "mui"
 }

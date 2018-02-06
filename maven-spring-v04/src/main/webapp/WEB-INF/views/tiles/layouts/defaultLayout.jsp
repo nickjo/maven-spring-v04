@@ -21,8 +21,18 @@
     <script src="assets/js/util.js"></script>
     <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
     <script src="assets/js/main.js"></script>
-    <%--angular--%>
-    <script src="components/angular/angular.js"></script>
+
+	<!-- angular -->
+	<script type="text/javascript" src="components/angular/angular.js"></script>	
+	<script src="components/angular-aria/angular-aria.js"></script>
+    <script src="components/angular-animate/angular-animate.js"></script>
+    <script src="components/angular-material/angular-material.js"></script>
+    <script type="text/javascript" src="components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script type="text/javascript" src="components/angular-mocks/angular-mocks.js"></script>
+    <script type="text/javascript" src="components/angular-resource/angular-resource.js">
+	
+	<!-- requirejs -->	
+	<!-- <script type="text/javascript" src="components/requirejs/require.js"></script>	 -->
 
     <%--mui--%>
     <script type="text/javascript" src="components/mui/packages/cdn/js/mui.js"></script>
