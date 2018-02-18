@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.springv04.mapper.Login001Mapper">
+	
+	<insert id="insertUserInfo" parameterType="map">
+		INSERT INTO TB_USER_INFO 
+		(
+			 USER_NM
+			,EMAIL
+			,USER_PW
+		)
+		VALUES
+		(
+			 #{USER_NM}
+			,#{EMAIL}
+			,#{USER_PW}
+		)
+	</insert>	
+	
+	<select id="selectUserInfo" parameterType="map" resultType="map">
+		SELECT USER_NM
+			 , EMAIL
+			 , USER_PW
+		  FROM TB_USER_INFO
+	</select>
+</mapper>

@@ -3,6 +3,8 @@ package com.framework.dao;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.stereotype.Component;
+
 public interface MybatisDao {
 	/**
      * List 형식 조회 메서드

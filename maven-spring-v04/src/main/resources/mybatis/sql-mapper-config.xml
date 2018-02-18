@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!-- 쿼리 로그 처리 인터셉터 연결 -->
+    <!-- <plugins>
+    	<plugin interceptor="com.framework.interceptor.QueryInterceptor">
+    		<property name="key1" value="value1" />
+    	</plugin>
+    	<plugin interceptor="com.framework.interceptor.PagingInterceptor">
+    	</plugin>
+    </plugins> -->
+
+</configuration>

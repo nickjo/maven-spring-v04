@@ -10,6 +10,6 @@ public class BaseService
 {
 	protected static final Log log = LogFactory.getLog(BaseService.class);
 
-	@Autowired
-	protected MybatisDao mtDao = null;
+//	@Autowired(required=false)
+//	protected MybatisDao mtDao = null;
 }
