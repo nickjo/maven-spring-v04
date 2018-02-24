@@ -14,8 +14,8 @@
 <header id="header">
 	<!-- <a href="#" class="logo"><strong>Editorial</strong> by HTML5 UP</a> -->
 	<div style="text-align:right;">
-		<a href="/login001R01.do" class="">Login</a>
-		<a href="/login001R02.do" class="">Join</a>
+		<a href="/maven-spring-v04/login001R01.do" class="">Login</a>
+		<a href="/maven-spring-v04/login001R02.do" class="">Join</a>
 	</div>
 </header>
  

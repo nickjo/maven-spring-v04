@@ -12,7 +12,7 @@
 <div id="sidebar">
 
 	<!-- Logo -->
-	<h1 id="logo"><a href="#">STRIPED</a></h1>
+	<h1 id="logo"><a href="/maven-spring-v04/mainPage.do">STRIPED</a></h1>
 
 	<!-- Nav -->
 	<nav id="nav">

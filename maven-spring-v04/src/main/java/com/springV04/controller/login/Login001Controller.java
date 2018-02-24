@@ -3,7 +3,6 @@ package com.springV04.controller.login;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -25,20 +24,21 @@ public class Login001Controller {
 	private Login001Service login001Serv;
 	
 	// 로그인 페이지 이동 
-	@RequestMapping(value = "/login001R01.do")
+	@RequestMapping(value = "/maven-spring-v04/login001R01.do")
 	public String login001R01(HttpServletRequest request, HttpServletResponse response) {
 		return "/tiles/login";
 	}
 	
 	// 회원가입 페이지 이동 
-	@RequestMapping(value = "/login001R02.do")
+	@RequestMapping(value = "/maven-spring-v04/login001R02.do")
 	public String login001R02(HttpServletRequest request, HttpServletResponse response) {
+		log.info("###login001R02");
 		return "/tiles/join";
 	}
 	
 	
 	//	회원가입 
-	@RequestMapping(value="/login001C01.do", method=RequestMethod.POST)
+	@RequestMapping(value="/maven-spring-v04/login001C01.do", method=RequestMethod.POST)
 	@ResponseBody
 	public void login001C01(HttpServletRequest request, HttpServletResponse response, Model model) throws Exception{
 		String name = request.getParameter("name");

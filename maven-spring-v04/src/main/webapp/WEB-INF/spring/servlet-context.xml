@@ -52,13 +52,13 @@
         </property>
     </bean>
 
-    <mvc:resources location="/WEB-INF/assets/"     	mapping="/assets/**" />
-    <mvc:resources location="/WEB-INF/components/"   mapping="/components/**" />
-    <mvc:resources location="/WEB-INF/css/"     		mapping="/css/**" />
-    <mvc:resources location="/WEB-INF/images/"     	mapping="/images/**" />
-    <mvc:resources location="/WEB-INF/js/"     		mapping="/js/**" />
-    <mvc:resources location="/WEB-INF/layout/"     	mapping="/layout/**" />
-    <mvc:resources location="/WEB-INF/views/"      	mapping="/views/**" />
+    <mvc:resources location="/WEB-INF/assets/"     	mapping="/maven-spring-v04/assets/**" />
+    <mvc:resources location="/WEB-INF/components/"   mapping="/maven-spring-v04/components/**" />
+    <mvc:resources location="/WEB-INF/css/"     		mapping="/maven-spring-v04/css/**" />
+    <mvc:resources location="/WEB-INF/images/"     	mapping="/maven-spring-v04/images/**" />
+    <mvc:resources location="/WEB-INF/js/"     		mapping="/maven-spring-v04/js/**" />
+    <mvc:resources location="/WEB-INF/layout/"     	mapping="/maven-spring-v04/layout/**" />
+    <mvc:resources location="/WEB-INF/views/"      	mapping="/maven-spring-v04/views/**" />
     
     <!-- Resolves views selected for rendering by @Controllers to .jsp resources in the /WEB-INF/views directory -->
     <!-- 웹 어플리케이션의 WAR 파일 내에 포함된 뷰 템플릿을 찾는다. 뷰 템플릿의 경로는 논리적 뷰 이름에 접두어와 접미어를 붙여 구성 -->

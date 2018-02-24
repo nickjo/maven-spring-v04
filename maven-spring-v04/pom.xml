@@ -208,6 +208,6 @@
   </dependencies>
     
   <build>
-    <finalName>maven-spring-v04</finalName>
+    <finalName>ROOT</finalName>
   </build>
 </project>

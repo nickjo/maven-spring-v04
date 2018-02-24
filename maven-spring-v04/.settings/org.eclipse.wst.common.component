@@ -5,7 +5,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
-        <property name="context-root" value="maven-spring-v04"/>
         <property name="java-output-path" value="/maven-spring-v04/target/classes"/>
+        <property name="context-root" value="/"/>
     </wb-module>
 </project-modules>

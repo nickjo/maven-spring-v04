@@ -5,7 +5,7 @@
 <%
    //response.sendRedirect("mainPage.do");
    //response.sendRedirect("mv_aboutPage.do");
-   response.sendRedirect("mainPage.do");
+   response.sendRedirect("/maven-spring-v04/mainPage.do");
    //response.sendRedirect("testHtml.do");
 %>
 
