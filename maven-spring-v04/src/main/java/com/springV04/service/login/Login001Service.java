@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import com.framework.service.BaseService;
 import com.springV04.dao.login.Login001Dao;
 
-@Service
+@Service("login001Service")
 public class Login001Service extends BaseService{
 
 	@Autowired(required=false)
@@ -19,10 +19,8 @@ public class Login001Service extends BaseService{
 	public Object login001C01(Map<String,Object> inData) throws Exception {
 		Object result = null;
 		
-		log.info("###login001C01: " + inData.toString());
 		result = login001Dao.login001C01(inData);
 			
-		log.info("##result: "+ result.toString());
 		return result;
 	}
 	
@@ -33,5 +31,16 @@ public class Login001Service extends BaseService{
 		
 		return result;
 		
+	}
+	
+	// User Id, Pw 확인 
+	public Map<String, Object> login001R04(Map<String, Object> inData) throws Exception{
+		log.debug("------[Start Service]  login001R04-------------");
+		Map<String, Object> outData = new HashMap<>();
+		
+		outData = login001Dao.login001R04(inData);
+		
+		log.debug("------[End Service]  login001R04-------------");
+		return outData;
 	}
 }

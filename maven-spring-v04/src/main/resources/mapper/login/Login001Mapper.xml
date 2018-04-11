@@ -5,22 +5,31 @@
 	<insert id="insertUserInfo" parameterType="map">
 		INSERT INTO TB_USER_INFO 
 		(
-			 USER_NM
+			 USER_ID
 			,EMAIL
 			,USER_PW
 		)
 		VALUES
 		(
-			 #{USER_NM}
+			 #{USER_ID}
 			,#{EMAIL}
 			,#{USER_PW}
 		)
 	</insert>	
 	
-	<select id="selectUserInfo" parameterType="map" resultType="map">
-		SELECT USER_NM
+	<!-- <select id="selectUserInfo" parameterType="map" resultType="map">
+		SELECT USER_ID
 			 , EMAIL
 			 , USER_PW
 		  FROM TB_USER_INFO
+	</select> -->
+	
+	<select id="selectUserInfo" parameterType="map" resultType="map">
+		SELECT USER_ID
+		     , EMAIL
+			 , USER_PW
+		  FROM TB_USER_INFO
+		 WHERE USER_ID=#{USER_ID}
+		  AND USER_PW=#{USER_PW}
 	</select>
 </mapper>

@@ -25,12 +25,12 @@
 		⑤ DEBUG : 일반 정보를 상세히 나타낼 때 사용합니다.
 	 -->
 	<!-- Application Loggers -->
-	<logger name="org.art.inside">
+	<!-- <logger name="org.art.inside">
 		<level value="info" />
 	</logger>
 	<logger name="org.art.inside.controller">
 		<level value="info" />
-	</logger>
+	</logger> -->
 	<!--// Application Loggers -->
 
 	<!-- 3rdparty Loggers -->
