@@ -1,5 +1,0 @@
-*.properties
-*.class
-*.log
-*.bak
-/target/
